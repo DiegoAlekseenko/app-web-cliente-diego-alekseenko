@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda - Inicio</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1>Mi Tienda</h1>
+        </a>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#productos-destacados">Inicio</a></li>
+                <li><a href="#productos-destacados">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <form action="#" method="get" role="search">
+            <label for="busqueda">Buscar productos</label>
+            <input type="search" id="busqueda" name="q" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <a href="#">Carrito (0)</a>
+    </header>
+
+    <main>
+
+        <aside aria-label="Filtros de productos">
+            <h2>Filtros</h2>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Categorías</legend>
+                    <label><input type="checkbox" name="categoria" value="electronica"> Electrónica</label>
+                    <label><input type="checkbox" name="categoria" value="ropa"> Ropa</label>
+                    <label><input type="checkbox" name="categoria" value="hogar"> Hogar</label>
+                    <label><input type="checkbox" name="categoria" value="deportes"> Deportes</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Rango de precio</legend>
+                    <label for="precio-min">Precio mínimo</label>
+                    <input type="number" id="precio-min" name="precio-min" min="0">
+                    <label for="precio-max">Precio máximo</label>
+                    <input type="number" id="precio-max" name="precio-max" min="0">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Valoración</legend>
+                    <label><input type="radio" name="valoracion" value="4"> 4 estrellas o más</label>
+                    <label><input type="radio" name="valoracion" value="3"> 3 estrellas o más</label>
+                </fieldset>
+
+                <button type="submit">Aplicar filtros</button>
+            </form>
+        </aside>
+
+        <section id="productos-destacados">
+            <h2>Productos destacados</h2>
+
+            <div class="productos">
+                <article>
+                    <figure>
+                        <img src="#" alt="Imagen del producto Auriculares Bluetooth">
+                    </figure>
+                    <h3>Auriculares Bluetooth</h3>
+                    <p>Descripción breve del producto.</p>
+                    <p>Precio: $12.500</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="#" alt="Imagen del producto Teclado mecánico">
+                    </figure>
+                    <h3>Teclado mecánico</h3>
+                    <p>Descripción breve del producto.</p>
+                    <p>Precio: $45.000</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="#" alt="Imagen del producto Mochila urbana">
+                    </figure>
+                    <h3>Mochila urbana</h3>
+                    <p>Descripción breve del producto.</p>
+                    <p>Precio: $28.000</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+
+                <article>
+                    <figure>
+                        <img src="#" alt="Imagen del producto Reloj inteligente">
+                    </figure>
+                    <h3>Reloj inteligente</h3>
+                    <p>Descripción breve del producto.</p>
+                    <p>Precio: $65.000</p>
+                    <button type="button">Agregar al carrito</button>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav aria-label="Navegación del pie de página">
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Política de devoluciones</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <p>&copy; 2026 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
